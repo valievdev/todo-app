@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #181818;
+	height: 100vh;
+}
+main {
+	width: 25%;
+}
+form {
+	display: flex;
+	justify-content: space-evenly;
+}
+h1 {
+	position: absolute;
+	top: 10vh;
+}
+#todolist {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#todolist > li {
+	width: fit-content;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 1.6;
+}
+#todolist > li:hover {
+	transition: all 500ms;
+	text-decoration: line-through;
+}
+input[type="text"] {
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgb(83, 83, 83);
+	padding: 10px 5px;
+	font-size: 10px;
+	transition: border-bottom-color 300ms;
+}
+input[type="text"]:focus {
+	outline: none;
+	border-bottom-color: rgb(160, 160, 160);
+}
+#submit {
+	padding: 6px 20px;
+	font-size: 1rem;
+	background-color: rgb(37, 72, 243);
+	border: none;
+	border-radius: 5px;
+}
